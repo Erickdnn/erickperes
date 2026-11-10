@@ -12,9 +12,17 @@
     {
       "src": "captacao/index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "agencia.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/agencia",
+      "dest": "/agencia.html"
+    },
     {
       "src": "/captacao",
       "dest": "/captacao/index.html"

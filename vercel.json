@@ -8,9 +8,17 @@
     {
       "src": "ia.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "captacao/index.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/captacao",
+      "dest": "/captacao/index.html"
+    },
     {
       "src": "/ia",
       "dest": "/ia.html"

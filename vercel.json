@@ -1,13 +1,20 @@
 {
-  "name": "erickperes-site",
   "version": 2,
   "builds": [
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "ia.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/ia",
+      "dest": "/ia.html"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
